@@ -1,82 +1,62 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
-  font-family: "Inter", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
-  background-color: #001e2fe5;
-  padding: 1.25rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 0.1px);
-
-  /* display: grid;
-  place-items: center;
-  min-height: calc(100vh - 0.1px); */
+  background-color: #001E2FE5;
+  padding:1.25rem;
 }
 
 .container {
-  background-color: #001e2f;
-  color: #fff;
+  background-color: #001E2FE5;
+  color:white;
   padding: 1.25rem;
   border-radius: 0.625rem;
   box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(60, 236, 215, 0.5);
-  /* vertical, horizontal, blur, spread, color */
-
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  min-width: 300px; */
-
-  max-width: 500px;
 }
 
-.container article:first-child {
+.container article:first-child{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: start;
 }
 
-.container article:first-child img {
+.container article:first-child img{
   width: 5rem;
 }
-
-.container article:first-child div {
+.container article:first-child div{
   margin-left: 1rem;
 }
-
-.container article:first-child div small {
-  opacity: 0.75;
+.container article:first-child div small{
+  opacity: 0.8;
 }
-
 .container article:nth-child(2) {
   margin: 1.5rem 0;
-  /* top right bottom left */
 }
 
 .container article:nth-child(2) p {
-  line-height: 1.8;
+  line-height: 1.5rem;
 }
 
-.container article:last-child h2 {
-  margin-bottom: 1rem;
+.container article:last-child h2{
+  margin-bottom: 1rem;  
+  font-size: 18px;
 }
 
-.container article:last-child ul {
-  display: flex;
-  flex-wrap: wrap;
+.container article:last-child ul{
+  display: flex;  
   align-items: center;
   justify-content: start;
 }
 
-.container article:last-child ul li {
+.container article:last-child ul li{
   margin-right: 1rem;
 }
-
-/* @media (min-width: 500px) {
-  .container {
-    width: 480px;
-  }
-} */
