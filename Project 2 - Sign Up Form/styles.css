@@ -1,64 +1,62 @@
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 1px);
+  height: calc(100vh - 10px);
 }
 
 .container {
   background-color: #f1f1f1;
-  margin: 1.25rem;
-  padding: 1.25rem;
-  margin: 1.25rem;
-  width: 90%;
   max-width: 700px;
-  border-radius: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.2rem #3f3d56;
+  padding:1.25rem;
+  margin:auto;
+  border-width: 0.5rem;
+  border-color: cadetblue;
+  border-radius: 0.85rem;
+  box-shadow: 0.3rem 0.3rem 0.1rem;
+   
 }
 
-.container form h1{
+.container h1{
   text-align: center;
-  margin-bottom: 1.25rem;
 }
 
-.container form .form-inner{
+.container .inner-form article{
+  margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.25rem;
-  margin-top: 1.25rem;
+  gap:1rem
 }
-
-.container form label{
+.container .inner-form label{
   display: block;
-  font-weight: bold;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12rem;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
-
-.container form input{
-  height: 2rem;
-  width: 100%;
-  border-width: 2px;
+.container .inner-form input{
+  border-color: black;
+  border-radius: 0.625rem;
+  box-shadow: none;
+  border-width: 0rem;
   border-style: solid;
-  border-color: #3f3d56;
-  opacity: 0.5;
-  border-radius: 0.5rem;
-  outline: none;
-  padding: 0.5rem;
-
+  padding: 1rem;
+  width: 90%;
+}
+.container .inner-form input:focus{
+  border-color: aqua;
 }
 
-.container form input:focus {
-  opacity: 1;
-}
-
-@media (min-width: 700px){
-  .container{
-    margin: 1.25rem auto;
+@media(min-width:700px){
+  body {
+    display: flex;
+    height: calc(100vh - 10px);
   }
-  .container form .form-inner{
-    grid-template-columns: repeat(2,1fr);
+  .container .inner-form article{
+    grid-template-columns: repeat(2,1fr) ;
+  }
+  .container .inner-form input{
+    width: 90%;
+    max-width: none;
+  }
+  .container .form-div{
+    display: flex;
+    align-content: center;
   }
 }
