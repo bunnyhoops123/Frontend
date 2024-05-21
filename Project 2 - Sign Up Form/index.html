@@ -16,7 +16,7 @@
           <article>
             <div class="text-input">
               <label for="firstName">First Name</label>
-              <input type="text" />
+              <input type="text" required />
             </div>
             <div class="text-input">
               <label for="lastName">Last Name</label>
@@ -28,7 +28,7 @@
           <article>
             <div class="text-input">
               <label for="email">Email</label>
-              <input type="email" autocomplete="off" />
+              <input type="email" autocomplete="off" required />
             </div>
             <div class="text-input">
               <label for="dob">Date of birth</label>
@@ -36,18 +36,49 @@
             </div>
           </article>
         </div>
-        <div class="inner-form">
+        <div class="inner-form" id="last">
           <article>
             <div class="text-input">
               <label for="password">Password</label>
-              <input type="password" />
+              <input type="password" name="password" required />
             </div>
             <div class="text-input">
               <label for="password-1">Confirm Password</label>
-              <input type="password" />
+              <input type="password" name="password-1" required />
             </div>
           </article>
         </div>
+
+        <div class="checkboxes">
+          <article>
+            <input
+            type="checkbox"
+            name="checkbox-1"
+            id="checkbox-1"
+            class="checkbox"
+            required
+          />
+          <label for="checkbox-1" class="label">
+            <div class="ball"></div>
+          </label>
+          </article>
+          <small>I have read and agree to the terms of service outlined in the Privacy Policy</small>
+        </div>
+        <div class="checkboxes">
+          <article>
+            <input
+            type="checkbox"
+            name="checkbox-2"
+            id="checkbox-2"
+            class="checkbox"            
+          />
+          <label for="checkbox-2" class="label">
+            <div class="ball"></div>
+          </label>
+          </article>
+          <small>Recieve emails about new updates and features (No spam)</small>
+        </div>
+        <button class="btn" type="submit">Create account</button>
       </form>
     </div>
   </body>
